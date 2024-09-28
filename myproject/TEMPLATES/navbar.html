@@ -1,0 +1,13 @@
+<ul>
+    {% if user.usertype == 'viewer' %}
+   
+    <li><a href="">Create Rusume</a></li>
+    {% elif user.usertype == 'admin' %}
+
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    {% endif %}
+
+    <li style="float:right"><a class="active" href="{% url 'logoutpage' %}">Log out</a></li>
+    
+  </ul>
